@@ -1,0 +1,253 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.technology {
+  &__numbered {
+    text-align: center;
+    @include m.tablet {
+      text-align: left;
+    }
+    @media (min-width: 1550px) {
+      padding-left: 55px;
+    }
+  }
+
+  &__main {
+    padding-top: 35px;
+    @include m.tablet {
+      padding-top: 40px;
+    }
+    @include m.desktop {
+      padding-top: 75px;
+      padding-left: 60px;
+    }
+    @media (min-width: 1440px) {
+      padding-left: 165px;
+    }
+    @media (min-width: 1550px) {
+      padding-left: 0px;
+    }
+
+    .img-content {
+      @include m.desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .order-1 {
+        order: 1;
+      }
+
+      .p-x__reset {
+        @include m.desktop {
+          padding-right: 55px;
+        }
+        @media (min-width: 1250px) {
+          padding-right: 110px;
+        }
+
+        @media (min-width: 1550px) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 35px;
+
+    @include m.tablet {
+      padding-top: 60px;
+    }
+    @include m.desktop {
+      padding-top: 140px;
+    }
+  }
+
+  &__img {
+    @include m.desktop {
+      order: 2;
+    }
+    width: 100%;
+    padding-top: 32px;
+    @include m.tablet {
+      padding-top: 55px;
+    }
+    @include m.desktop {
+      padding-top: 20px;
+      padding-top: 0px;
+    }
+
+    .img-01 {
+      margin: 0 auto;
+      @include m.desktop {
+        display: none;
+      }
+    }
+    .img-02 {
+      display: none;
+      @include m.desktop {
+        display: block;
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.desktop {
+      flex-direction: row;
+      align-items: start;
+      gap: 55px;
+    }
+    @media (min-width: 1250px) {
+      gap: 80px;
+    }
+    @media (min-width: 1550px) {
+      padding-left: 55px;
+    }
+
+    .sliders02 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #0b0d17;
+      font-family: Bellefair;
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      @include m.tablet {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+        margin-bottom: 45px;
+      }
+      gap: 16px;
+      @include m.desktop {
+        font-size: 32px;
+        letter-spacing: 2px;
+        gap: 30px;
+        flex-direction: column;
+      }
+      font-weight: 400;
+
+      &__indicators {
+        width: 40px;
+        height: 40px;
+        @include m.tablet {
+          width: 60px;
+          height: 60px;
+        }
+        @include m.desktop {
+          width: 80px;
+          height: 80px;
+        }
+
+        background: v.$clr-white;
+        opacity: 0.2;
+
+        &:hover {
+          opacity: 0.5;
+          transition: opacity 500ms ease-in-out;
+        }
+
+        &--active {
+          width: 40px;
+          height: 40px;
+          @include m.tablet {
+            width: 60px;
+            height: 60px;
+          }
+          @include m.desktop {
+            width: 80px;
+            height: 80px;
+          }
+          opacity: 1;
+        }
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+        border: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &--h1 {
+      color: v.$clr-white;
+      text-align: center;
+      font-family: v.$ff-serif;
+      font-size: 24px;
+      @include m.tablet {
+        margin-bottom: 16px;
+        font-size: 40px;
+      }
+      @include m.desktop {
+        margin-bottom: 10px;
+        font-size: v.$fs-56;
+        text-align: left;
+        white-space: nowrap;
+      }
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    &--h2 {
+      color: v.$clr-light;
+      text-align: center;
+      font-family: v.$ff-sans-cond;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2.362px;
+      margin-bottom: 10px;
+      @include m.tablet {
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+      @include m.desktop {
+        margin-bottom: 10px;
+        text-align: left;
+      }
+    }
+
+    .text__container {
+      margin: 0 auto;
+      max-width: 500px;
+      @include m.tablet {
+        width: 85%;
+        max-width: 100%;
+      }
+      @include m.desktop {
+        width: 445px;
+        margin: 0;
+      }
+      margin-top: 16px;
+      margin-bottom: 50px;
+      @include m.tablet {
+        margin-bottom: 100px;
+      }
+      @include m.desktop {
+        margin-top: 27px;
+        margin-bottom: 220px;
+      }
+
+      font-size: v.$fs-15;
+      @include m.tablet {
+        font-size: v.$fs-16;
+      }
+      text-align: center;
+      @include m.desktop {
+        text-align: start;
+        font-size: v.$fs-18;
+      }
+    }
+  }
+}

@@ -1,0 +1,332 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* START|  paddings */
+
+.p-x__nav {
+  padding: 0 2.5rem;
+
+  @include m.tablet {
+    padding: 0 0 0 4rem;
+  }
+
+  @include m.desktop {
+    padding: 0 0 0 5.5rem;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 0 5.5rem;
+  }
+}
+
+.pt_nav {
+  padding-top: 2.5rem;
+  @include m.tablet {
+    padding-top: 0;
+  }
+  @include m.desktop {
+    padding-top: 4rem;
+  }
+}
+
+.p-x {
+  padding: 0 2.5rem;
+  @include m.tablet {
+    padding: 0 4rem;
+  }
+  @include m.desktop {
+    padding: 0 5.5rem;
+  }
+}
+
+/* END|  paddings */
+
+/* container */
+.container__nav {
+  margin: 0 auto;
+  max-width: 160rem;
+  @media (min-width: 1600px) {
+    max-width: 138.5rem;
+  }
+}
+.container {
+  max-width: 138.5rem;
+  margin: 0 auto;
+}
+
+/* colors */
+.bg-dark {
+  background-color: v.$clr-dark;
+}
+.bg-accent {
+  background-color: v.$clr-light;
+}
+.bg-white {
+  background-color: v.$clr-white;
+}
+.text-dark {
+  color: v.$clr-dark;
+}
+.text-accent {
+  color: v.$clr-light;
+}
+.text-white {
+  color: v.$clr-white;
+}
+
+/* typography */
+.ff-serif {
+  font-family: v.$ff-serif;
+}
+.ff-sans-cond {
+  font-family: v.$ff-sans-cond;
+}
+.ff-sans-normal {
+  font-family: v.$ff-sans-normal;
+}
+
+.letter-spacing-1 {
+  letter-spacing: v.$spacing-01;
+}
+.letter-spacing-2 {
+  letter-spacing: v.$spacing-02;
+}
+.letter-spacing-3 {
+  letter-spacing: v.$spacing-03;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-150 {
+  font-size: v.$fs-150;
+}
+.fs-100 {
+  font-size: v.$fs-100;
+}
+.fs-56 {
+  font-size: v.$fs-56;
+}
+.fs-32 {
+  font-size: v.$fs-32;
+}
+.fs-28 {
+  font-size: v.$fs-28;
+}
+.fs-18 {
+  font-size: v.$fs-18;
+}
+.fs-16 {
+  font-size: v.$fs-16;
+}
+.fs-14 {
+  font-size: v.$fs-14;
+}
+
+.h1 {
+  color: v.$clr-white;
+  font-family: v.$ff-serif;
+  font-size: 80px;
+  @media (min-width: 430px) {
+    font-size: 130px;
+  }
+  @include m.tablet {
+    font-size: v.$fs-150;
+  }
+  font-weight: 400;
+}
+
+.h2 {
+  color: v.$clr-white;
+  font-family: v.$ff-serif;
+  font-weight: 400;
+  font-size: v.$fs-56;
+  @include m.tablet {
+    font-size: 80px;
+  }
+  @include m.desktop {
+    font-size: v.$fs-100;
+  }
+}
+
+.h3 {
+  color: v.$clr-white;
+  font-family: v.$ff-serif;
+  font-size: v.$fs-56;
+  font-weight: 400;
+}
+
+.h4 {
+  color: v.$clr-white;
+  font-family: v.$ff-serif;
+  font-size: v.$fs-32;
+  font-weight: 400;
+}
+
+.h5 {
+  color: v.$clr-light;
+  font-family: v.$ff-sans-cond;
+  font-size: v.$fs-28;
+  font-weight: 400;
+  letter-spacing: v.$spacing-01;
+}
+
+.sub-heading--01 {
+  color: v.$clr-white;
+  font-family: v.$ff-serif;
+  font-size: v.$fs-28;
+  font-weight: 400;
+}
+
+.sub-heading--02,
+.sub-heading--02--light {
+  color: v.$clr-white;
+  font-family: v.$ff-sans-cond;
+  font-size: v.$fs-14;
+  font-weight: 400;
+  letter-spacing: v.$spacing-03;
+}
+
+.sub-heading--02--light {
+  color: v.$clr-light;
+}
+
+.nav-text,
+.tab-text {
+  color: v.$clr-white;
+  font-family: v.$ff-sans-cond;
+  font-size: v.$fs-16;
+  font-weight: 400;
+  letter-spacing: v.$spacing-02;
+}
+
+.tab-text {
+  font-size: v.$fs-14;
+  @include m.tablet {
+    font-size: v.$fs-16;
+  }
+}
+
+.text-body,
+.text-body__02 {
+  color: v.$clr-white;
+  font-family: v.$ff-sans-normal;
+  font-size: v.$fs-18;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.text-body__02 {
+  color: v.$clr-light;
+}
+
+.numbered-title {
+  font-family: v.$ff-sans-cond;
+  font-size: v.$fs-16;
+  @include m.tablet {
+    font-size: 20px;
+  }
+  @include m.desktop {
+    font-size: v.$fs-28;
+  }
+  text-transform: uppercase;
+  letter-spacing: v.$spacing-01;
+
+  span {
+    margin-right: 0.5em;
+    font-weight: 700;
+    color: v.$clr-white;
+    opacity: 0.25;
+  }
+}
+
+.description {
+  color: v.$clr-light;
+  font-size: v.$fs-18;
+  font-family: v.$ff-sans-normal;
+  font-weight: 400;
+  line-height: 32px;
+
+  &--opac {
+    opacity: 0.5;
+  }
+}
+
+.mobile {
+  position: fixed;
+  top: 0;
+  right: -70%;
+  width: 70%;
+  max-width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+
+  @include m.tablet {
+    display: none;
+  }
+
+  .secondary__nav {
+    li {
+      margin-bottom: 32px;
+      margin-left: 32px;
+    }
+  }
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 35px 25px 65px 0;
+  cursor: pointer;
+  img {
+    width: 18px;
+  }
+}
+
+.burger {
+  cursor: pointer;
+  @include m.tablet {
+    display: none;
+  }
+  img {
+    width: 18px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.transition-1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: -100%;
+  z-index: 100;
+  background: v.$clr-dark;
+  transition: 0.2s ease-out;
+}
+.transition-1.is-active {
+  left: 0;
+}
+
+.transition-2 {
+  position: fixed;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  z-index: 100;
+  background: v.$clr-dark;
+  transition: 0.5s ease-out;
+}
+.transition-2.is-active {
+  top: 0;
+}

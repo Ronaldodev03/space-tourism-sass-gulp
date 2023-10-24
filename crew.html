@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a responsive web page created from a Figma design using HTML, SASS, and Gulp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="build/css/app.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="crew__bg">
+    <div class="p-x__nav pt_nav">
+      <header class="header container__nav">
+        <div class="header__logo">
+          <img
+            src="./build/img/shared/logo.svg"
+            alt="header-logo"
+            width="48"
+            height="48"
+          />
+        </div>
+        <div class="header__nav">
+          <!-- mobile -->
+          <div class="burger" id="burger">
+            <img
+              src="./build/img/shared/icon-hamburger.svg"
+              alt="nav-burger-icon"
+              width="25"
+              height="20"
+            />
+          </div>
+          <div id="mobile" class="mobile">
+            <div class="close" id="close">
+              <img
+                src="./build/img/shared/icon-close.svg"
+                alt="nav-close-icon"
+                width="25"
+                height="20"
+              />
+            </div>
+
+            <nav>
+              <ul class="secondary__nav">
+                <li class="nav-underline-indicators">
+                  <a href="index.html" class="nav-text">
+                    <span>00</span> HOME</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="destination.html" class="nav-text">
+                    <span>01</span> DESTINATION</a
+                  >
+                </li>
+                <li
+                  class="nav-underline-indicators nav-underline-indicators--active"
+                >
+                  <a href="crew.html" class="nav-text"> <span>02</span> CREW</a>
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="technology.html" class="nav-text">
+                    <span>03</span> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- desktop -->
+          <div class="nav__desktop">
+            <nav>
+              <ul class="primary__nav">
+                <li class="nav-underline-indicators">
+                  <a href="index.html" class="nav-text">
+                    <span>00</span> HOME</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="destination.html" class="nav-text">
+                    <span>01</span> DESTINATION</a
+                  >
+                </li>
+                <li
+                  class="nav-underline-indicators nav-underline-indicators--active"
+                >
+                  <a href="crew.html" class="nav-text"> <span>02</span> CREW</a>
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="technology.html" class="nav-text">
+                    <span>03</span> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header__line"></div>
+      </header>
+    </div>
+
+    <!--  <div class="transition is-active transition-1"></div> -->
+
+    <main class="p-x">
+      <div class="container">
+        <div class="crew__content">
+          <div class="crew__flex">
+            <div class="crew__img">
+              <h2 class="numbered-title"><span>02</span> MEET YOUR CREW</h2>
+              <img
+                src="./build/img/crew/image-douglas-hurley.png"
+                alt="crew-member"
+                width="514"
+                height="700"
+                id="crew-img"
+              />
+              <div class="line"></div>
+            </div>
+            <div class="crew__text">
+              <h2 class="numbered-title crew__text--numbered">
+                <span>02</span> MEET YOUR CREW
+              </h2>
+              <h2 class="crew__text--h2 uppercase" id="crew-role"></h2>
+              <h1 class="crew__text--h1 uppercase" id="crew-name"></h1>
+              <p class="text-body__02 text__container" id="crew-bio"></p>
+              <div class="sliders">
+                <button
+                  class="sliders__indicators--active slider"
+                  data-index="0"
+                  aria-label="slider"
+                ></button>
+                <button
+                  class="sliders__indicators slider"
+                  data-index="1"
+                  aria-label="slider"
+                ></button>
+                <button
+                  class="sliders__indicators slider"
+                  data-index="2"
+                  aria-label="slider"
+                ></button>
+                <button
+                  class="sliders__indicators slider"
+                  data-index="3"
+                  aria-label="slider"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="crew.js"></script>
+  </body>
+</html>

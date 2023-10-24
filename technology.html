@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a responsive web page created from a Figma design using HTML, SASS, and Gulp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="build/css/app.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="technology__bg">
+    <div class="p-x__nav pt_nav">
+      <header class="header container__nav">
+        <div class="header__logo">
+          <img
+            src="./build/img/shared/logo.svg"
+            alt="header-logo"
+            width="48"
+            height="48"
+          />
+        </div>
+        <div class="header__nav">
+          <!-- mobile -->
+          <div class="burger" id="burger">
+            <img
+              src="./build/img/shared/icon-hamburger.svg"
+              alt="nav-burger-icon"
+              width="25"
+              height="20"
+            />
+          </div>
+          <div id="mobile" class="mobile">
+            <div class="close" id="close">
+              <img
+                src="./build/img/shared/icon-close.svg"
+                alt="nav-close-icon"
+                width="25"
+                height="20"
+              />
+            </div>
+
+            <nav>
+              <ul class="secondary__nav">
+                <li class="nav-underline-indicators">
+                  <a href="index.html" class="nav-text">
+                    <span>00</span> HOME</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="destination.html" class="nav-text">
+                    <span>01</span> DESTINATION</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="crew.html" class="nav-text"> <span>02</span> CREW</a>
+                </li>
+                <li
+                  class="nav-underline-indicators nav-underline-indicators--active"
+                >
+                  <a href="technology.html" class="nav-text">
+                    <span>03</span> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- desktop -->
+          <div class="nav__desktop">
+            <nav>
+              <ul class="primary__nav">
+                <li class="nav-underline-indicators">
+                  <a href="index.html" class="nav-text">
+                    <span>00</span> HOME</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="destination.html" class="nav-text">
+                    <span>01</span> DESTINATION</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="crew.html" class="nav-text"> <span>02</span> CREW</a>
+                </li>
+                <li
+                  class="nav-underline-indicators nav-underline-indicators--active"
+                >
+                  <a href="technology.html" class="nav-text">
+                    <span>03</span> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header__line"></div>
+      </header>
+    </div>
+
+    <!--      QUITE LA TRANSICION PARA NO PERJUDICAR PERFORMANCE EN LIGHTHOUSE 
+ -->
+    <!-- <div class="transition is-active transition-1"></div> -->
+
+    <main class="technology__main">
+      <div class="p-x">
+        <div class="container">
+          <h2 class="numbered-title technology__numbered">
+            <span>03</span> SPACE LAUNCH 101
+          </h2>
+        </div>
+      </div>
+      <div class="img-content container">
+        <div class="technology__img">
+          <img
+            alt="technology-member"
+            width="768"
+            height="310"
+            id="technology-img-01"
+            src="./build/img/technology/image-launch-vehicle-landscape.jpg"
+            class="img-01"
+          />
+          <img
+            alt="technology-member"
+            width="768"
+            height="310"
+            id="technology-img-02"
+            src="./build/img/technology/image-launch-vehicle-portrait.jpg"
+            class="img-02"
+          />
+        </div>
+        <div class="p-x order-1 p-x__reset">
+          <div class="container">
+            <div class="technology__content">
+              <div class="technology__flex">
+                <div class="sliders02">
+                  <button
+                    class="sliders02__indicators--active slider"
+                    data-index="0"
+                  >
+                    1
+                  </button>
+                  <button class="sliders02__indicators slider" data-index="1">
+                    2
+                  </button>
+                  <button class="sliders02__indicators slider" data-index="2">
+                    3
+                  </button>
+                </div>
+                <div class="technology__text">
+                  <h2 class="technology__text--h2 uppercase">
+                    THE TERMINOLOGY…
+                  </h2>
+                  <h1
+                    class="technology__text--h1 uppercase"
+                    id="technology-name"
+                  >
+                    LAUNCH VEHICLE
+                  </h1>
+                  <p
+                    class="text-body__02 text__container"
+                    id="technology-description"
+                  >
+                    A launch vehicle or carrier rocket is a rocket-propelled
+                    vehicle used to carry a payload from Earth's surface to
+                    space, usually to Earth orbit or beyond. Our WEB-X carrier
+                    rocket is the most powerful in operation. Standing 150
+                    metres tall, it's quite an awe-inspiring sight on the launch
+                    pad!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="technology.js"></script>
+  </body>
+</html>

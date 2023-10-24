@@ -1,0 +1,50 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.destination__bg {
+  background-image: url(../img/destination/background-destination-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @include m.tablet {
+    background-image: url(../img/destination/background-destination-tablet.jpg);
+    background-position: top center;
+  }
+
+  @include m.desktop {
+    background-image: url(../img/destination/background-destination-desktop.jpg);
+  }
+}
+
+.crew__bg {
+  background-image: url(../img/crew/background-crew-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @include m.tablet {
+    background-image: url(../img/crew/background-crew-tablet.jpg);
+    background-position: bottom center;
+  }
+
+  @include m.desktop {
+    background-image: url(../img/crew/background-crew-desktop.jpg);
+  }
+}
+
+.technology__bg {
+  background-image: url(../img/technology/background-technology-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  @include m.tablet {
+    background-image: url(../img/technology/background-technology-tablet.jpg);
+    background-position: top center;
+  }
+
+  @include m.desktop {
+    background-image: url(../img/technology/background-technology-desktop.jpg);
+  }
+}

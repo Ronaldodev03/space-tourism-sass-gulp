@@ -1,0 +1,18 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.home-bg {
+  background-image: url(../img/home/background-home-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  @include m.tablet {
+    background-image: url(../img/home/background-home-tablet.jpg);
+    background-position: top center;
+  }
+
+  @include m.desktop {
+    background-image: url(../img/home/background-home-desktop.jpg);
+  }
+}

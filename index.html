@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a responsive web page created from a Figma design using HTML, SASS, and Gulp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="build/css/app.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="home-bg">
+    <div class="p-x__nav pt_nav">
+      <header class="header container__nav">
+        <div class="header__logo">
+          <img
+            src="./build/img/shared/logo.svg"
+            alt="header-logo"
+            width="48"
+            height="48"
+          />
+        </div>
+        <div class="header__nav">
+          <!-- mobile -->
+          <div class="burger" id="burger">
+            <img
+              src="./build/img/shared/icon-hamburger.svg"
+              alt="nav-burger-icon"
+              width="25"
+              height="20"
+            />
+          </div>
+          <div id="mobile" class="mobile">
+            <div class="close" id="close">
+              <img
+                src="./build/img/shared/icon-close.svg"
+                alt="nav-close-icon"
+                width="25"
+                height="20"
+              />
+            </div>
+
+            <nav>
+              <ul class="secondary__nav">
+                <li
+                  class="nav-underline-indicators nav-underline-indicators--active"
+                >
+                  <a href="index.html" class="nav-text">
+                    <span>00</span> HOME</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="destination.html" class="nav-text">
+                    <span>01</span> DESTINATION</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="crew.html" class="nav-text"> <span>02</span> CREW</a>
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="technology.html" class="nav-text">
+                    <span>03</span> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- desktop -->
+          <div class="nav__desktop">
+            <nav>
+              <ul class="primary__nav">
+                <li
+                  class="nav-underline-indicators nav-underline-indicators--active"
+                >
+                  <a href="index.html" class="nav-text">
+                    <span>00</span> HOME</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="destination.html" class="nav-text">
+                    <span>01</span> DESTINATION</a
+                  >
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="crew.html" class="nav-text"> <span>02</span> CREW</a>
+                </li>
+                <li class="nav-underline-indicators">
+                  <a href="technology.html" class="nav-text">
+                    <span>03</span> TECHNOLOGY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="header__line"></div>
+      </header>
+    </div>
+    <!--     QUITE LA TRANSICION PARA NO PERJUDICAR PERFORMANCE EN LIGHTHOUSE 
+ -->
+    <!-- <div class="transition is-active transition-1"></div> -->
+
+    <main class="p-x">
+      <div class="container">
+        <div class="home__content">
+          <div class="home__text">
+            <div class="home__subtitle">
+              <p class="h5">SO, YOU WANT TO TRAVEL TO</p>
+            </div>
+            <h1 class="home__title h1">SPACE</h1>
+            <p class="text-body__02 text__container">
+              Let’s face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we’ll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          <div class="home__explore">
+            <div>
+              <a href="/destination.html" class="explore">EXPLORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="home.js"></script>
+  </body>
+</html>
